@@ -20,6 +20,9 @@ body {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   color: #403F4C;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 .no-scrolling {
