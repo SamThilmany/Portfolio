@@ -1,0 +1,40 @@
+// Variables
+
+// Brand Colors for use across theme
+
+$theme-primary:         #0091EA;
+$theme-secondary:       #403F4C;
+$theme-secondary-dark:  darken($theme-secondary,10%);
+$caption:               rgba($theme-secondary,0.7);
+$error:                 #F44336;
+$footer:                #282A30;
+// $theme-primary:      #2C3E50;
+// $theme-success:      #18BC9C;
+
+// Shades of gray for use across the theme
+
+$black:            #000;
+$gray-darker:      lighten($black, 13.5%);
+$gray-dark:        lighten($black, 20%);
+$gray:             lighten($black, 33.5%);
+$gray-light:       lighten($black, 46.7%);
+$gray-lighter:     lighten($black, 93.5%);
+$modal:            rgba($black,0.4);
+
+// Font
+
+@font-face {
+  font-family: QuicksandLight;
+  src: url("../fonts/Quicksand-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: Quicksand;
+  src: url("../fonts/Quicksand-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+
+$family-headings: "QuicksandLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$family-paragraph: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;

@@ -1,0 +1,110 @@
+.primary {
+  .panel {
+    h3, h4, li {
+      color: $theme-secondary;
+      font-family: $family-paragraph;
+    }
+  }
+}
+
+.price {
+  font-size: 2em;
+}
+
+.price-cents {
+  vertical-align: super;
+  font-size: 50%;
+}
+
+.price-per-x {
+  font-size: 35%;
+  font-style: italic;
+}
+
+.panel {
+  transition : all 0.2s ease-in-out;
+  border-radius: 0;
+  border: none;
+}
+
+.panel.hover {
+  box-shadow: 0 0 10px rgba($black,.5);
+  animation-name: offer-buzz;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.panel-default {
+  .panel-heading {
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 0px;
+  }
+}
+
+.nav-tabs {
+  &.nav-justified {
+    border-bottom: 1px solid #ddd;
+    >li {
+      >a {
+        border-radius: 0;
+        border: none;
+        background-color: white;
+        color: $theme-secondary;
+      }
+      &.active {
+        >a {
+          background-color: rgb(230, 230, 230);
+          border: none;
+          &:focus {
+            border: none;
+          }
+          &:hover {
+            border: none;
+          }
+        }
+      }
+      &:not(:first-child) {
+        border-left: 1px solid #ddd;
+      }
+    }
+    &.active {
+      a {
+        border: none;
+        &:focus {
+          border: none;
+        }
+        &:hover {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.tab-content {
+  background-color: white;
+  color: $theme-secondary;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .tab-pane {
+    margin: 20px;
+  }
+}
+
+@keyframes offer-buzz {
+  33% {
+    transform: scale(1.008);
+  }
+
+  66% {
+    transform: scale(0.992);
+  }
+
+  100% {
+    transform: scale(1.01);
+  }
+}

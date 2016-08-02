@@ -1,0 +1,102 @@
+/**
+ * Header
+ */
+
+#landing {
+  text-align: center;
+  background-image: url('../img/header.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  height: 100vh;
+  &:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba($black,.5);
+  }
+	.container {
+		padding-top: 100px;
+	  padding-bottom: 20px;
+	}
+	img {
+		display: block;
+	  margin: 0 auto 20px;
+	}
+  .line {
+    display: flex;
+    max-width: 66%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  hr {
+    border: 0;
+    border-top: solid 3px white;
+    margin: 25px auto 30px;
+    flex: 1;
+    z-index: 1;
+  }
+  .icon {
+    &:after {
+      content: unquote("\"\\f108\"");
+      font-family: 'FontAwesome';
+      display: inline-block;
+      position: relative;
+      font-size: 2em;
+      padding: 0 0.25em;
+    }
+  }
+	.intro-text {
+		h1.name {
+			display: block;
+		  font-family: $family-headings;
+		  text-transform: uppercase;
+		  font-weight: 700;
+		  font-size: 3em;
+		}
+		.skills {
+			font-size: 1.25em;
+		  font-weight: 300;
+		}
+	}
+  .page-scroll {
+    animation: blink-animation 2s infinite;
+    a {
+      position: relative;
+      i {
+        position: absolute;
+        top: 5px;
+        left: -2px;
+      }
+    }
+  }
+}
+
+@keyframes blink-animation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 768px) {
+	#landing {
+		.intro-text {
+			h1.name {
+				font-size: 4.75em;
+			}
+			.skills {
+		    font-size: 1.75em;
+		  }
+		}
+	}
+}

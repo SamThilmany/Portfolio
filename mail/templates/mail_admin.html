@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html style="width: 100%; margin: 0; padding: 0;">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Email User</title>
+  </head>
+
+  <style>
+    @font-face {
+      font-family: Raleway;
+      src: url({url_raleway}) format("truetype")
+    }
+    @font-face {
+      font-family: Quicksand;
+      src: url({url_guicks}) format("opentype")
+    }
+  </style>
+
+  <body style="width: 100%; margin: 0; padding: 0;">
+
+    <div class="email-background" style="background: #F7F7F7; width: 100%; margin: 0; padding: 0;">
+
+      <div class="pre-header" style="font-size: 2px;padding: 0;margin: 0;background: #403F4C;color: #403F4C;">
+        {first_name} has sent a message named {subject} on {date} at {time}
+      </div>
+
+      <div class="header" style="text-transform: uppercase;padding: 15px;background: #403F4C;color: #FFF;font-family: 'Raleway' 'Helvetica Neue' sans-serif;text-align: center;">
+        <p class="title" style="font-size: 25px;padding: 0;font-family: 'QuickSand' 'Helvetica Neue' sans-serif;margin: 0;">Sam Thilmany</p>
+        <hr class="short" style="border: none;border-top: 1px solid #FFF;width: 80%;max-width: 500px;">
+        <p style="margin: 0;">Web Designer – Web Developer – Graphics Designer</p>
+      </div>
+
+      <div class="email-container" style="max-width: 500px;font-family: 'Raleway' 'Helvetica Neue' sans-serif;margin: 0 auto;padding: 15px;color: #403F4C;">
+        <h1 style="margin: 0;padding: 0 0 10px 0;color: #0091EA;font-family: 'QuickSand' 'Helvetica Neue' sans-serif;font-size: 30px;text-align: center;">New message from the contact form</h1>
+        <hr style="border: none;border-top: 1px solid #0091EA;">
+        <p style="padding: 10px 0 0 0;">On <span style="color: #0091EA;">{date}</span> at <span style="color: #0091EA;">{time}</span> {first_name} {last_name} has sent a message.<br>Answer him by a mail to: <span style="color: #0091EA !important;">{email}</span></p>
+        <p style="padding: 10px 0 0 0;">Here's the message:</p>
+        <p class="message" style="padding-left: 10px; margin: 10px 0 0 0;border-left:2px solid #0091EA;">{message}</p>
+        <p style="padding: 10px 0 0 0;">Sincerly, <br>
+        Sam Thilmany</p>
+      </div>
+
+      <div class="footer" style="padding: 15px;background: #403F4C;color: #FFF;font-family: 'Raleway' 'Helvetica Neue' sans-serif;text-align: center;">
+        <p class="copyright" style="padding-bottom: 10px;margin: 0;">Copyright © {year} – Sam Thilmany</p>
+        <p style="margin: 0;"><small><i>This message was sent automatically.</i></small></p>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

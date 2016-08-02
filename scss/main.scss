@@ -1,0 +1,19 @@
+/**
+ * Import global scss files
+ */
+@import "global/variables";
+@import "global/mixins";
+@import "global/basic";
+
+/**
+ * Import scss files of the different sections
+ */
+@import "header";
+@import "landing";
+@import "about";
+@import "portfolio";
+@import "features";
+@import "offers";
+@import "contact";
+@import "footer";
+@import "cookie-note";

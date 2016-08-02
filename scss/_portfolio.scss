@@ -1,0 +1,83 @@
+/**
+ * Portfolio
+ */
+
+$padding: 15px;
+
+.img-centered {
+	margin: 0 auto;
+}
+
+figure {
+	margin: 0;
+}
+
+.portfolio-grid .portfolio-item {
+	perspective: 2000px;
+	perspective-origin: 0 50%;
+	position: relative;
+	padding: 0 15px 15px;
+
+	div {
+		overflow: hidden;
+	}
+
+	figcaption {
+		background: $theme-secondary;
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+}
+
+.portfolio-grid {
+
+	figure {
+		transform-style: preserve-3d;
+
+		img {
+			transition: transform 0.5s;
+		}
+
+		&.active {
+			img {
+				transform: translateX(30%);
+			}
+			figcaption {
+				opacity: 1;
+				transform: rotateY(0deg);
+				transition: transform 0.5s, opacity 0.2s;
+			}
+		}
+
+	}
+
+	figcaption {
+		width: 50%;
+		opacity: 0;
+		margin: 0;
+		border: none;
+		padding: $padding;
+		backface-visibility: hidden;
+		transform-origin: 0 0;
+		transform: rotateY(-90deg);
+		transition: transform 0.5s, opacity 0.2s 0.4s;
+		box-shadow: 5px 0px 10px -5px rgba(0,0,0,0.4);
+
+		.item-header {
+			font-family: $family-paragraph;
+			font-size: 2em;
+			margin-bottom: 10px;
+		}
+
+		a {
+			position: absolute;
+			bottom: $padding;
+			right: $padding;
+		}
+
+	}
+
+}

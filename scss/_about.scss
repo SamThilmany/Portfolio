@@ -1,0 +1,26 @@
+.circle{
+  display: inline-block;
+  position: relative;
+  margin: 10px 10px;
+  height: 135px;
+  width: 130px;
+  &.skillText{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+  }
+  p{
+    display: flex;
+    height: 130px;
+    width: 130px;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -5px;
+  }
+}

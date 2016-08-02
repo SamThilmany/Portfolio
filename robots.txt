@@ -1,0 +1,3 @@
+# Allow Access to ALL Robots
+User-agent: *
+Disallow:
