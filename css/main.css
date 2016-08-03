@@ -541,7 +541,7 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
  */
 .navbar-custom {
   background: #403F4C;
-  font-family: "QuicksandLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
@@ -1306,6 +1306,7 @@ footer {
 }
 footer h3 {
   margin-bottom: 30px;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 footer .footer-above {
   padding-top: 50px;
