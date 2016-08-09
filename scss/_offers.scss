@@ -1,6 +1,12 @@
+#offers {
+  h2, h3, .panel-wrapper, .further-information {
+    opacity: 0;
+  }
+}
+
 .primary {
   .panel {
-    h3, h4, li {
+    p, h4, li {
       color: $theme-secondary;
       font-family: $family-paragraph;
     }
@@ -9,6 +15,8 @@
 
 .price {
   font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .price-cents {

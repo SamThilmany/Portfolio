@@ -194,6 +194,34 @@
 
 
     /**
+     * Animate in the content
+     *
+     * @function {appear}               Requires the jQuery Appear function to detect if the element is visible
+     */
+    var leftElements = $('#landing h1, #about h2, #about h3, #portfolio h2, #features h2, #offers h2, #offers h3, #contact h2');
+
+    leftElements.appear({
+     force_process: true
+    });
+
+    leftElements.on('appear', function() {
+     $(this).addClass('flyInLeft');
+    });
+
+    var rightElements = $('#landing .skills, #about .content-text, #about .circle, #portfolio .portfolio-item, #features .features-list, #offers .panel-wrapper, #offers .further-information, #contact .form-wrapper');
+
+    rightElements.appear({
+     force_process: true
+    });
+
+    rightElements.on('appear', function() {
+     $(this).addClass('flyInRight');
+    });
+
+
+
+
+    /**
      * Animate the Portfolio Figcaption
      *
      * @param     {variable} touchscreen   Contains the Results of the hasTouchscreen()-Function
@@ -345,7 +373,7 @@
      */
     setTimeout(function() {
       $('.cookie-note').addClass('is-active')
-    }, 2000);
+    }, 1000);
 
     $('.close').on('click', function() {
       $('.cookie-note').removeClass('is-active')

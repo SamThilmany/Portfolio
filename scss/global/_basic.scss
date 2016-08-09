@@ -144,6 +144,16 @@ section {
   margin-top: 20px;
 }
 
+.flyInLeft {
+  animation: bounce-left .6s forwards;
+  @include bounce(bounce-left, 200px, -15px);
+}
+
+.flyInRight {
+  animation: bounce-right .6s forwards;
+  @include bounce(bounce-right, -200px, 15px);
+}
+
 /**
  * Buttons
  */

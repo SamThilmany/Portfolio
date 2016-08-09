@@ -1,4 +1,15 @@
+#about {
+  h2, h3 {
+    opacity: 0;
+  }
+}
+
+.content-text {
+  opacity: 0;
+}
+
 .circle{
+  opacity: 0;
   display: inline-block;
   position: relative;
   margin: 10px 10px;

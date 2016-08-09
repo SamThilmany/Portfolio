@@ -60,10 +60,15 @@
 		  text-transform: uppercase;
 		  font-weight: 700;
 		  font-size: 3em;
+      animation-duration: 1s;
+      opacity: 0;
 		}
 		.skills {
+      display: block;
 			font-size: 1.25em;
 		  font-weight: 300;
+      animation-duration: 1s;
+      opacity: 0;
 		}
 	}
   .page-scroll {

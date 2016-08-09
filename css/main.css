@@ -273,6 +273,82 @@ section.primary {
   margin-top: 20px;
 }
 
+.flyInLeft {
+  -webkit-animation: bounce-left .6s forwards;
+          animation: bounce-left .6s forwards;
+}
+@-webkit-keyframes bounce-left {
+  0% {
+    opacity: .2;
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  60% {
+    opacity: .7;
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes bounce-left {
+  0% {
+    opacity: .2;
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  60% {
+    opacity: .7;
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+.flyInRight {
+  -webkit-animation: bounce-right .6s forwards;
+          animation: bounce-right .6s forwards;
+}
+@-webkit-keyframes bounce-right {
+  0% {
+    opacity: .2;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  60% {
+    opacity: .7;
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes bounce-right {
+  0% {
+    opacity: .2;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  60% {
+    opacity: .7;
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 /**
  * Buttons
  */
@@ -761,10 +837,17 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
   text-transform: uppercase;
   font-weight: 700;
   font-size: 3em;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 0;
 }
 #landing .intro-text .skills {
+  display: block;
   font-size: 1.25em;
   font-weight: 300;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 0;
 }
 #landing .page-scroll {
   -webkit-animation: blink-animation 2s infinite;
@@ -808,7 +891,16 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
     font-size: 1.75em;
   }
 }
+#about h2, #about h3 {
+  opacity: 0;
+}
+
+.content-text {
+  opacity: 0;
+}
+
 .circle {
+  opacity: 0;
   display: inline-block;
   position: relative;
   margin: 10px 10px;
@@ -847,6 +939,13 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
 /**
  * Portfolio
  */
+#portfolio h2 {
+  opacity: 0;
+}
+#portfolio .portfolio-item {
+  opacity: 0;
+}
+
 .img-centered {
   margin: 0 auto;
 }
@@ -922,6 +1021,10 @@ figure {
   right: 15px;
 }
 
+#features h2, #features .features-list {
+  opacity: 0;
+}
+
 .features-list > ul {
   margin: 0px 0px 10px 0px;
   padding: 0;
@@ -954,13 +1057,19 @@ figure {
     padding: 0px 15px 0px 35px;
   }
 }
-.primary .panel h3, .primary .panel h4, .primary .panel li {
+#offers h2, #offers h3, #offers .panel-wrapper, #offers .further-information {
+  opacity: 0;
+}
+
+.primary .panel p, .primary .panel h4, .primary .panel li {
   color: #403F4C;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .price {
   font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .price-cents {
@@ -1084,6 +1193,10 @@ figure {
 /**
  * Contact
  */
+#contact h2, #contact .form-wrapper {
+  opacity: 0;
+}
+
 .form-wrapper {
   background: white;
   padding: 15px;

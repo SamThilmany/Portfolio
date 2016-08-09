@@ -4,6 +4,15 @@
 
 $padding: 15px;
 
+#portfolio {
+	h2 {
+		opacity: 0;
+	}
+	.portfolio-item {
+		opacity: 0;
+	}
+}
+
 .img-centered {
 	margin: 0 auto;
 }
