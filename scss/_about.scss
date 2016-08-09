@@ -1,4 +1,18 @@
+/**
+ * Styles of the About section
+ *
+ */
+
+#about {
+  h2,
+  h3,
+  .content-text {
+    opacity: 0;
+  }
+}
+
 .circle{
+  opacity: 0;
   display: inline-block;
   position: relative;
   margin: 10px 10px;

@@ -1,5 +1,6 @@
 /**
- * Navigation
+ * Styles of the Header section
+ *
  */
 
 .navbar-custom {
@@ -11,13 +12,15 @@
 	a:focus {
 		outline: none;
 	}
+
 	.navbar-brand {
 	  color: white;
 		&:hover, &:focus, &:active, &.active {
 			color: white;
 		}
 	}
-	.navbar-nav {
+
+  .navbar-nav {
 	  letter-spacing: 1px;
 		li {
 			a {
@@ -42,6 +45,7 @@
 			}
 		}
 	}
+
 	.navbar-toggle {
 	  color: white;
 	  text-transform: uppercase;
@@ -53,6 +57,7 @@
 			border-color: white;
 		}
 	}
+
 }
 
 .navbar {
@@ -63,7 +68,7 @@
   &:after {
     content: '';
     position: fixed;
-    background: rgba(black,.5);
+    background: $black-transparent;
     height: 100%;
     width: 100%;
   }
@@ -74,21 +79,26 @@
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     transition: padding 0.3s;
+
 		.navbar-brand {
 	    font-size: 2em;
 	    -webkit-transition: all 0.3s;
 	    transition: all 0.3s;
 	  }
+
 		&.affix {
 	    padding: 10px 0;
 			.navbar-brand {
 		    font-size: 1.5em;
 		  }
 	  }
+
     .navbar-nav {
       margin-top: 5px;
     }
+
   }
+
   .nav {
     >li {
       >a {
@@ -96,6 +106,7 @@
       }
     }
   }
+
 }
 
 .hamburger-menu {
@@ -103,12 +114,14 @@
 	height: 34px;
 	cursor: pointer;
 }
+
 .bar,
 .bar:after,
 .bar:before {
   width: 20px;
 	height: 1px;
 }
+
 .bar {
 	transform: translateY(7px);
 	background: rgba(255, 255, 255, 1);
@@ -119,6 +132,7 @@
     background: rgba(255, 255, 255, 0);
   }
 }
+
 .bar:before {
 	content: "";
 	position: absolute;
@@ -127,6 +141,7 @@
 	background: rgba(255, 255, 255, 1);
 	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 .bar:after {
 	content: "";
 	position: absolute;
@@ -135,11 +150,13 @@
 	background: rgba(255, 255, 255, 1);
 	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 .bar.animate:after {
 	top: 0;
 	transform: rotate(45deg);
 	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
 }
+
 .bar.animate:before {
 	bottom: 0;
 	transform: rotate(-45deg);

@@ -1,6 +1,20 @@
+/**
+ * Styles of the Offers section
+ *
+ */
+
+#offers {
+  h2,
+  h3,
+  .panel-wrapper,
+  .further-information {
+    opacity: 0;
+  }
+}
+
 .primary {
   .panel {
-    h3, h4, li {
+    p, h4, li {
       color: $theme-secondary;
       font-family: $family-paragraph;
     }
@@ -9,6 +23,8 @@
 
 .price {
   font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .price-cents {
@@ -28,7 +44,7 @@
 }
 
 .panel.hover {
-  box-shadow: 0 0 10px rgba($black,.5);
+  box-shadow: 0 0 10px $black-transparent;
   animation-name: offer-buzz;
   animation-duration: 300ms;
   animation-timing-function: linear;
@@ -80,7 +96,9 @@
         }
       }
     }
+
   }
+
 }
 
 .tab-content {
@@ -90,21 +108,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   .tab-pane {
     margin: 20px;
   }
-}
 
-@keyframes offer-buzz {
-  33% {
-    transform: scale(1.008);
-  }
-
-  66% {
-    transform: scale(0.992);
-  }
-
-  100% {
-    transform: scale(1.01);
-  }
 }
