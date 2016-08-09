@@ -359,7 +359,7 @@
     $('.circleCSS').progress(size, ["#00C853", "#00E676"], '0.90');
     $('.circleJQUERY').progress(size, ["#7CB342", "#689F38"], '0.70');
     $('.circlePHP').progress(size, ["#F57F17", "#F9A825"], '0.60');
-    $('.circleMYSQL').progress(size, ["#FF8F00", "#FF6F00"], '0.40');
+    $('.circleSQL').progress(size, ["#FF8F00", "#FF6F00"], '0.40');
     $('.circlePS').progress(size, ["#7CB342", "#689F38"], '0.70');
     $('.circleVEC').progress(size, ["#7CB342", "#689F38"], '0.65');
     $('.circleSKETCH').progress(size, ["#00C853", "#00E676"], '0.85');
