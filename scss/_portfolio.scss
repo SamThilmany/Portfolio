@@ -1,13 +1,15 @@
 /**
- * Portfolio
+ * Styles for the Portfolio section
  */
 
+// Padding Variable
 $padding: 15px;
 
+
+
+
 #portfolio {
-	h2 {
-		opacity: 0;
-	}
+	h2,
 	.portfolio-item {
 		opacity: 0;
 	}
@@ -73,7 +75,7 @@ figure {
 		transform-origin: 0 0;
 		transform: rotateY(-90deg);
 		transition: transform 0.5s, opacity 0.2s 0.4s;
-		box-shadow: 5px 0px 10px -5px rgba(0,0,0,0.4);
+		box-shadow: 5px 0px 10px -5px $black-transparent;
 
 		.item-header {
 			font-family: $family-paragraph;

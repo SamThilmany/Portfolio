@@ -1,6 +1,17 @@
 /**
  * Import global scss files
  */
+/**
+ * Colors
+ */
+/**
+ * Different shades of gray
+ *
+ */
+/**
+ * Fonts
+ *
+ */
 @font-face {
   font-family: QuicksandLight;
   src: url("../fonts/Quicksand-Light.otf") format("opentype");
@@ -14,7 +25,234 @@
   src: url("../fonts/Raleway-Regular.ttf") format("truetype");
 }
 /**
+ * Bounce In Keyframes mixin
+ *
+ */
+/**
+ * Launch keyframes
+ *
+ */
+@-webkit-keyframes launch {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+  10%, 15% {
+    -webkit-transform: translateX(0) scale(0.5);
+            transform: translateX(0) scale(0.5);
+  }
+  30%, 35% {
+    -webkit-transform: translateX(-20) scale(0.5);
+            transform: translateX(-20) scale(0.5);
+  }
+  40%, 70% {
+    -webkit-transform: translateX(100vw) scale(0.5);
+            transform: translateX(100vw) scale(0.5);
+  }
+  70% {
+    opacity: 1;
+  }
+  71% {
+    opacity: 0;
+    -webkit-transform: translateX(100vw) scale(0.5);
+            transform: translateX(100vw) scale(0.5);
+  }
+  72% {
+    opacity: 0;
+    -webkit-transform: translateX(0px) scale(0.5);
+            transform: translateX(0px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+  }
+}
+@keyframes launch {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+  10%, 15% {
+    -webkit-transform: translateX(0) scale(0.5);
+            transform: translateX(0) scale(0.5);
+  }
+  30%, 35% {
+    -webkit-transform: translateX(-20) scale(0.5);
+            transform: translateX(-20) scale(0.5);
+  }
+  40%, 70% {
+    -webkit-transform: translateX(100vw) scale(0.5);
+            transform: translateX(100vw) scale(0.5);
+  }
+  70% {
+    opacity: 1;
+  }
+  71% {
+    opacity: 0;
+    -webkit-transform: translateX(100vw) scale(0.5);
+            transform: translateX(100vw) scale(0.5);
+  }
+  72% {
+    opacity: 0;
+    -webkit-transform: translateX(0px) scale(0.5);
+            transform: translateX(0px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+  }
+}
+/**
+ * Blink keyframes
+ *
+ */
+@-webkit-keyframes blink-animation {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+@keyframes blink-animation {
+  0%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+/**
+ * Buzz keyframes for offers
+ *
+ */
+@-webkit-keyframes offer-buzz {
+  33% {
+    -webkit-transform: scale(1.008);
+            transform: scale(1.008);
+  }
+  66% {
+    -webkit-transform: scale(0.992);
+            transform: scale(0.992);
+  }
+  100% {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+}
+@keyframes offer-buzz {
+  33% {
+    -webkit-transform: scale(1.008);
+            transform: scale(1.008);
+  }
+  66% {
+    -webkit-transform: scale(0.992);
+            transform: scale(0.992);
+  }
+  100% {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+}
+/**
+ * Buzz keyframes for buttons
+ *
+ */
+@-webkit-keyframes buzz {
+  10% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  20% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  30% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  40% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  60% {
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
+  }
+  70% {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+  80% {
+    -webkit-transform: scale(0.99);
+            transform: scale(0.99);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes buzz {
+  10% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  20% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  30% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  40% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  60% {
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
+  }
+  70% {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+  80% {
+    -webkit-transform: scale(0.99);
+            transform: scale(0.99);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/**
  * Fonts
+ *
  */
 body {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -58,6 +296,7 @@ h6 {
 
 /**
  * Horizontal Rule
+ *
  */
 hr.user-light, hr.user-primary,
 hr.portfolio-light, hr.portfolio-primary,
@@ -231,6 +470,7 @@ hr.big-space {
 
 /**
  * Sections
+ *
  */
 section {
   padding: 100px 0;
@@ -351,6 +591,7 @@ section.primary {
 }
 /**
  * Buttons
+ *
  */
 .btn-outline {
   color: white;
@@ -463,93 +704,9 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
           transition: opacity 1s ease-in-out;
 }
 
-@-webkit-keyframes buzz {
-  10% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  20% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-  30% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  40% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-  50% {
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03);
-  }
-  60% {
-    -webkit-transform: scale(0.97);
-            transform: scale(0.97);
-  }
-  70% {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-  }
-  80% {
-    -webkit-transform: scale(0.99);
-            transform: scale(0.99);
-  }
-  90% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes buzz {
-  10% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  20% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-  30% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  40% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-  50% {
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03);
-  }
-  60% {
-    -webkit-transform: scale(0.97);
-            transform: scale(0.97);
-  }
-  70% {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-  }
-  80% {
-    -webkit-transform: scale(0.99);
-            transform: scale(0.99);
-  }
-  90% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
 /**
  * Modal
+ *
  */
 .site-modal .modal-content {
   border-radius: 0;
@@ -613,7 +770,8 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
  * Import scss files of the different sections
  */
 /**
- * Navigation
+ * Styles of the Header section
+ *
  */
 .navbar-custom {
   background: #403F4C;
@@ -671,7 +829,7 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
 .overlay:after {
   content: '';
   position: fixed;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   height: 100%;
   width: 100%;
 }
@@ -787,7 +945,7 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 #landing .container {
   padding-top: 100px;
@@ -862,27 +1020,6 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
   left: -2px;
 }
 
-@-webkit-keyframes blink-animation {
-  0%, 100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-@keyframes blink-animation {
-  0%, 100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
 @media (min-width: 768px) {
   #landing .intro-text h1.name {
     font-size: 4.75em;
@@ -891,11 +1028,13 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
     font-size: 1.75em;
   }
 }
-#about h2, #about h3 {
-  opacity: 0;
-}
-
-.content-text {
+/**
+ * Styles of the About section
+ *
+ */
+#about h2,
+#about h3,
+#about .content-text {
   opacity: 0;
 }
 
@@ -937,11 +1076,9 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
 }
 
 /**
- * Portfolio
+ * Styles for the Portfolio section
  */
-#portfolio h2 {
-  opacity: 0;
-}
+#portfolio h2,
 #portfolio .portfolio-item {
   opacity: 0;
 }
@@ -1021,7 +1158,12 @@ figure {
   right: 15px;
 }
 
-#features h2, #features .features-list {
+/**
+ * Styles of the features section
+ *
+ */
+#features h2,
+#features .features-list {
   opacity: 0;
 }
 
@@ -1057,7 +1199,14 @@ figure {
     padding: 0px 15px 0px 35px;
   }
 }
-#offers h2, #offers h3, #offers .panel-wrapper, #offers .further-information {
+/**
+ * Styles of the Offers section
+ *
+ */
+#offers h2,
+#offers h3,
+#offers .panel-wrapper,
+#offers .further-information {
   opacity: 0;
 }
 
@@ -1090,7 +1239,7 @@ figure {
 }
 
 .panel.hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   -webkit-animation-name: offer-buzz;
           animation-name: offer-buzz;
   -webkit-animation-duration: 300ms;
@@ -1161,39 +1310,12 @@ figure {
   margin: 20px;
 }
 
-@-webkit-keyframes offer-buzz {
-  33% {
-    -webkit-transform: scale(1.008);
-            transform: scale(1.008);
-  }
-  66% {
-    -webkit-transform: scale(0.992);
-            transform: scale(0.992);
-  }
-  100% {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-  }
-}
-
-@keyframes offer-buzz {
-  33% {
-    -webkit-transform: scale(1.008);
-            transform: scale(1.008);
-  }
-  66% {
-    -webkit-transform: scale(0.992);
-            transform: scale(0.992);
-  }
-  100% {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-  }
-}
 /**
- * Contact
+ * Styles of the Contact section
+ *
  */
-#contact h2, #contact .form-wrapper {
+#contact h2,
+#contact .form-wrapper {
   opacity: 0;
 }
 
@@ -1244,81 +1366,6 @@ figure {
           transform: none;
 }
 
-@-webkit-keyframes launch {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateX(0) scale(1);
-            transform: translateX(0) scale(1);
-  }
-  10%, 15% {
-    -webkit-transform: translateX(0) scale(0.5);
-            transform: translateX(0) scale(0.5);
-  }
-  30%, 35% {
-    -webkit-transform: translateX(-20) scale(0.5);
-            transform: translateX(-20) scale(0.5);
-  }
-  40%, 70% {
-    -webkit-transform: translateX(100vw) scale(0.5);
-            transform: translateX(100vw) scale(0.5);
-  }
-  70% {
-    opacity: 1;
-  }
-  71% {
-    opacity: 0;
-    -webkit-transform: translateX(100vw) scale(0.5);
-            transform: translateX(100vw) scale(0.5);
-  }
-  72% {
-    opacity: 0;
-    -webkit-transform: translateX(0px) scale(0.5);
-            transform: translateX(0px) scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px) scale(1);
-            transform: translateX(0px) scale(1);
-  }
-}
-
-@keyframes launch {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateX(0) scale(1);
-            transform: translateX(0) scale(1);
-  }
-  10%, 15% {
-    -webkit-transform: translateX(0) scale(0.5);
-            transform: translateX(0) scale(0.5);
-  }
-  30%, 35% {
-    -webkit-transform: translateX(-20) scale(0.5);
-            transform: translateX(-20) scale(0.5);
-  }
-  40%, 70% {
-    -webkit-transform: translateX(100vw) scale(0.5);
-            transform: translateX(100vw) scale(0.5);
-  }
-  70% {
-    opacity: 1;
-  }
-  71% {
-    opacity: 0;
-    -webkit-transform: translateX(100vw) scale(0.5);
-            transform: translateX(100vw) scale(0.5);
-  }
-  72% {
-    opacity: 0;
-    -webkit-transform: translateX(0px) scale(0.5);
-            transform: translateX(0px) scale(0.5);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px) scale(1);
-            transform: translateX(0px) scale(1);
-  }
-}
 .floating-label-form-group {
   position: relative;
   margin-bottom: 0;
@@ -1392,18 +1439,18 @@ figure {
 }
 
 #success {
-  border-left: 4px solid green;
-  color: green;
+  border-left: 4px solid #008000;
+  color: #008000;
 }
 
 #error {
-  border-left: 4px solid red;
-  color: red;
+  border-left: 4px solid #F44336;
+  color: #F44336;
 }
 
 #warning {
-  border-left: 4px solid orange;
-  color: orange;
+  border-left: 4px solid #ffa500;
+  color: #ffa500;
 }
 
 @media (max-width: 768px) {
@@ -1412,7 +1459,8 @@ figure {
   }
 }
 /**
- * Footer
+ * Styles of the Footer section
+ *
  */
 footer {
   color: white;
@@ -1436,6 +1484,10 @@ footer .footer-below-content > p:not(:first-child) {
   margin: 0px;
 }
 
+/**
+ * Styles of the cookie note
+ *
+ */
 .cookie-note {
   position: fixed;
   overflow: hidden;

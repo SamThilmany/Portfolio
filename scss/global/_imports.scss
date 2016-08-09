@@ -1,0 +1,123 @@
+/**
+ * Bounce In Keyframes mixin
+ *
+ */
+@mixin bounceIn($animation, $value1, $value2) {
+  @keyframes #{$animation} {
+    0% {
+      opacity: .2;
+      transform: translateX($value1);
+    }
+    60% {
+      opacity: .7;
+      transform: translateX($value2);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+/**
+ * Launch keyframes
+ *
+ */
+@keyframes launch {
+	0% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+	}
+	10%, 15% {
+    transform: translateX(0) scale(0.5);
+	}
+	30%, 35% {
+		transform: translateX(-20) scale(0.5);
+	}
+	40%, 70% {
+    transform: translateX(100vw) scale(0.5);
+	}
+	70% {
+    opacity: 1
+	}
+	71% {
+    opacity: 0;
+    transform: translateX(100vw) scale(0.5);
+	}
+	72% {
+    opacity: 0;
+    transform: translateX(0px) scale(0.5);
+	}
+	100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+	}
+}
+
+/**
+ * Blink keyframes
+ *
+ */
+@keyframes blink-animation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/**
+ * Buzz keyframes for offers
+ *
+ */
+ @keyframes offer-buzz {
+   33% {
+     transform: scale(1.008);
+   }
+
+   66% {
+     transform: scale(0.992);
+   }
+
+   100% {
+     transform: scale(1.01);
+   }
+ }
+
+/**
+ * Buzz keyframes for buttons
+ *
+ */
+ @keyframes buzz {
+   10% {
+     transform: scale(1.05);
+   }
+   20% {
+     transform: scale(0.95);
+   }
+   30% {
+     transform: scale(1.05);
+   }
+   40% {
+     transform: scale(0.95);
+   }
+   50% {
+     transform: scale(1.03);
+   }
+   60% {
+     transform: scale(0.97);
+   }
+   70% {
+     transform: scale(1.01);
+   }
+   80% {
+     transform: scale(0.99);
+   }
+   90% {
+     transform: scale(1);
+   }
+   100% {
+     transform: scale(1);
+   }
+ }

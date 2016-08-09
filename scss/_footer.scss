@@ -1,24 +1,30 @@
 /**
- * Footer
+ * Styles of the Footer section
+ *
  */
 
 footer {
   color: white;
+
   h3 {
     margin-bottom: 30px;
     font-family: $family-headings;
   }
+
   .footer-above {
     padding-top: 50px;
     background-color: $theme-secondary;
   }
+
   .footer-col {
     margin-bottom: 50px;
   }
+
   .footer-below {
     padding: 25px 0;
     background-color: $theme-primary;
   }
+
   .footer-below-content {
     >p {
       &:not(:first-child) {
@@ -26,4 +32,5 @@ footer {
       }
     }
   }
+  
 }

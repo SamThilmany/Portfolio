@@ -12,6 +12,7 @@
   color: white;
   position: relative;
   height: 100vh;
+
   &:before {
     content: '';
 		position: absolute;
@@ -19,16 +20,19 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-color: rgba($black,.5);
+		background-color: $black-transparent;
   }
+
 	.container {
 		padding-top: 100px;
 	  padding-bottom: 20px;
 	}
+
 	img {
 		display: block;
 	  margin: 0 auto 20px;
 	}
+
   .line {
     display: flex;
     max-width: 66%;
@@ -36,6 +40,7 @@
     align-items: center;
     justify-content: center;
   }
+
   hr {
     border: 0;
     border-top: solid 3px white;
@@ -43,6 +48,7 @@
     flex: 1;
     z-index: 1;
   }
+
   .icon {
     &:after {
       content: unquote("\"\\f108\"");
@@ -53,6 +59,7 @@
       padding: 0 0.25em;
     }
   }
+
 	.intro-text {
 		h1.name {
 			display: block;
@@ -71,6 +78,7 @@
       opacity: 0;
 		}
 	}
+
   .page-scroll {
     animation: blink-animation 2s infinite;
     a {
@@ -82,15 +90,7 @@
       }
     }
   }
-}
 
-@keyframes blink-animation {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
 }
 
 @media (min-width: 768px) {
