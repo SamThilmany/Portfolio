@@ -360,5 +360,16 @@ fieldset[disabled] {
 	  opacity: 0;
 	  display: none;
 	}
-  
+
+  .contactEmail {
+    &:after {
+      content: "contact\40thilmany.lu";
+    }
+  }
+
+  .dataEmail {
+    &:after {
+      content: "data\40thilmany.lu";
+    }
+  }
 }

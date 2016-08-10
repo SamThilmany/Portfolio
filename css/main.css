@@ -765,6 +765,12 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
   opacity: 0;
   display: none;
 }
+.site-modal .contactEmail:after {
+  content: "contact\40thilmany.lu";
+}
+.site-modal .dataEmail:after {
+  content: "data\40thilmany.lu";
+}
 
 /**
  * Import scss files of the different sections

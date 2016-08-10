@@ -1,3 +1,7 @@
-# Allow Access to ALL Robots
-User-agent: *
+User-Agent: *
 Disallow:
+Disallow: /img/
+Disallow: /mail/
+Disallow: /cgi-bin/
+
+Sitemap: https://laborecke.de/Portfolio/sitemap.xml

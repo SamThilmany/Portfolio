@@ -13,3 +13,6 @@ deployment-config.json
 
 # Sitemap
 sitemap.xml
+
+# htaccess
+.htaccess

@@ -379,6 +379,23 @@
       $('.cookie-note').removeClass('is-active')
     });
 
+    var scroll = $(window).scrollTop();
+    var viewPort = $(window).height();
+
+    $(window).scroll(function(){
+      scroll = $(window).scrollTop();
+      viewPort = $(window).height();
+
+      if(scroll > viewPort) {
+        $('.cookie-note').removeClass('is-active');
+      }
+    });
+
+    if(scroll > viewPort) {
+      $('.cookie-note').removeClass('is-active');
+    }
+
+
 
 
     /**
