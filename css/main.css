@@ -783,7 +783,7 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
   background: #403F4C;
   font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   border: none;
 }
 .navbar-custom a:focus {
