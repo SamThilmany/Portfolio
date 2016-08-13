@@ -371,29 +371,37 @@
      * Display the cookie note after 2 seconds and hide it if the user closes it
      *
      */
+    var cookieInit = false,
+        scroll = $(window).scrollTop(),
+        viewPort = $(window).height();
+
+    function scrollCloseCookieNote() {
+      if (cookieInit === true) {
+        if(scroll > viewPort) {
+          $('.cookie-note').removeClass('is-active');
+        }
+        else {
+          $('.cookie-note').addClass('is-active');
+        }
+      }
+    }
+
     setTimeout(function() {
-      $('.cookie-note').addClass('is-active')
+      $('.cookie-note').addClass('is-active');
+      cookieInit = true;
     }, 1000);
 
     $('.close').on('click', function() {
       $('.cookie-note').removeClass('is-active')
     });
 
-    var scroll = $(window).scrollTop();
-    var viewPort = $(window).height();
-
     $(window).scroll(function(){
+      // Update the variables
       scroll = $(window).scrollTop();
       viewPort = $(window).height();
 
-      if(scroll > viewPort) {
-        $('.cookie-note').removeClass('is-active');
-      }
+      scrollCloseCookieNote();
     });
-
-    if(scroll > viewPort) {
-      $('.cookie-note').removeClass('is-active');
-    }
 
 
 
