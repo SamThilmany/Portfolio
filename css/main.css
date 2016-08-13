@@ -765,6 +765,12 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
   opacity: 0;
   display: none;
 }
+.site-modal .contactEmail:after {
+  content: "contact\40thilmany.lu";
+}
+.site-modal .dataEmail:after {
+  content: "data\40thilmany.lu";
+}
 
 /**
  * Import scss files of the different sections
@@ -777,7 +783,7 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
   background: #403F4C;
   font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   border: none;
 }
 .navbar-custom a:focus {
@@ -1312,7 +1318,7 @@ figure {
 
 /**
  * Styles of the Contact section
- *
+ * 
  */
 #contact h2,
 #contact .form-wrapper {
