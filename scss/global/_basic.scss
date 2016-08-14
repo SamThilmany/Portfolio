@@ -2,6 +2,10 @@
  * Fonts
  *
  */
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: $family-paragraph;
   overflow-x: hidden;
@@ -121,6 +125,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 	h2 {
 		margin: 0;
 	  font-size: 3em;
