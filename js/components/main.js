@@ -372,11 +372,12 @@
      *
      */
     var cookieInit = false,
+        cookieClose = false,
         scroll = $(window).scrollTop(),
         viewPort = $(window).height();
 
     function scrollCloseCookieNote() {
-      if (cookieInit === true) {
+      if (cookieInit === true && cookieClose === false) {
         if(scroll > viewPort) {
           $('.cookie-note').removeClass('is-active');
         }
@@ -392,7 +393,8 @@
     }, 1000);
 
     $('.close').on('click', function() {
-      $('.cookie-note').removeClass('is-active')
+      $('.cookie-note').removeClass('is-active');
+      cookieClose = true;
     });
 
     $(window).scroll(function(){

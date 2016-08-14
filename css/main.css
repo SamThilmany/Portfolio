@@ -254,6 +254,10 @@
  * Fonts
  *
  */
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
@@ -486,6 +490,7 @@ section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow-x: hidden;
 }
 section h2 {
   margin: 0;
@@ -1614,4 +1619,12 @@ footer .footer-below-content > p:not(:first-child) {
       -ms-transform: translateX(0);
           transform: translateX(0);
   opacity: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  .cookie-note {
+    bottom: 0px;
+    left: 0px;
+    margin-right: 0px;
+  }
 }
