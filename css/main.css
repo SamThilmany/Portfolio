@@ -1323,7 +1323,7 @@ figure {
 
 /**
  * Styles of the Contact section
- * 
+ *
  */
 #contact h2,
 #contact .form-wrapper {
@@ -1479,6 +1479,7 @@ footer {
 footer h3 {
   margin-bottom: 30px;
   font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 footer .footer-above {
   padding-top: 50px;
