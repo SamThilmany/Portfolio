@@ -14,7 +14,7 @@ This website bases on the `Bootstrap` framework and consists of `HTML`, `CSS` an
 
 ----------
 
-I have programmed this website, as if it was a larger project. This is mainly noticeable in the partitioning of the `PHP` files. You will see that the email address to which the form will be sent is outsourced. For larger projects, this `config.php`-file would contain all the private data such as the database connection, email addresses and such like.
+I have programmed this website, as if it was a larger project. This is mainly noticeable in the partitioning of the `PHP` files. You will see that the email of the website owner – in this case my own – is outsourced. For larger projects, this `config.php`-file would contain all the private data such as the database connection, email addresses and such like.
 
 This simplifies the maintenance of a project, since all personal data are stored in one file and thus can be updated centrally. Furthermore, it facilitates the work with a Git system like GitHub, since a tiny `.gitignore` entry prevents the upload of personal data to the repository.
 
