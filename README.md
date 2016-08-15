@@ -1,7 +1,7 @@
 Sam Thilmany | Portfolio Webpage
 ===================
 
-This is the source code of my personal [portfolio website](https://www.sam-thilmany.com).
+This is the source code of my personal [portfolio website](https://www.thilmany.lu).
 I had great fun programming it and I hope that it pleases you.
 
 ----------
