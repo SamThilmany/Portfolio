@@ -200,6 +200,12 @@
      */
     var leftElements = $('#landing h1, #about h2, #about h3, #portfolio h2, #features h2, #offers h2, #offers h3, #contact h2');
 
+    leftElements.each( function(){
+      $(this).css({
+        opacity: 0
+      })
+    } );
+
     leftElements.appear({
      force_process: true
     });
@@ -209,6 +215,12 @@
     });
 
     var rightElements = $('#landing .skills, #about .content-text, #about .circle, #portfolio .portfolio-item, #features .features-list, #offers .panel-wrapper, #offers .further-information, #contact .form-wrapper');
+
+    rightElements.each( function(){
+      $(this).css({
+        opacity: 0
+      })
+    } );
 
     rightElements.appear({
      force_process: true

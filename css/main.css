@@ -473,6 +473,18 @@ hr.big-space {
 }
 
 /**
+ * Email
+ *
+ */
+.contactEmail:after {
+  content: "contact\40thilmany.lu";
+}
+
+.dataEmail:after {
+  content: "data\40thilmany.lu";
+}
+
+/**
  * Sections
  *
  */
@@ -698,6 +710,7 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
   right: 10px;
   bottom: 10px;
   position: fixed;
+  z-index: 2000;
   opacity: 0;
   -webkit-transition: opacity 1s ease-in-out;
           transition: opacity 1s ease-in-out;
@@ -736,7 +749,7 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
   margin-top: 40px;
 }
 .site-modal .close-modal {
-  position: absolute;
+  position: fixed;
   width: 75px;
   height: 75px;
   background-color: transparent;
@@ -770,11 +783,35 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
   opacity: 0;
   display: none;
 }
-.site-modal .contactEmail:after {
-  content: "contact\40thilmany.lu";
+
+/**
+ * Noscript
+ *
+ */
+noscript {
+  color: #cc3300;
 }
-.site-modal .dataEmail:after {
-  content: "data\40thilmany.lu";
+noscript span.contactEmail {
+  color: #cc3300;
+}
+
+#noscript-msg {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  top: 100px;
+  color: white;
+  padding: 20px 0;
+  background: #cc3300;
+}
+#noscript-msg a {
+  color: white;
+  text-decoration: underline;
+}
+#noscript-msg a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 /**
@@ -1008,7 +1045,6 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
   font-size: 3em;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  opacity: 0;
 }
 #landing .intro-text .skills {
   display: block;
@@ -1016,7 +1052,6 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
   font-weight: 300;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  opacity: 0;
 }
 #landing .page-scroll {
   -webkit-animation: blink-animation 2s infinite;
@@ -1043,14 +1078,8 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
  * Styles of the About section
  *
  */
-#about h2,
-#about h3,
-#about .content-text {
-  opacity: 0;
-}
-
 .circle {
-  opacity: 0;
+  opacity: 1;
   display: inline-block;
   position: relative;
   margin: 10px 10px;
@@ -1089,11 +1118,6 @@ fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset
 /**
  * Styles for the Portfolio section
  */
-#portfolio h2,
-#portfolio .portfolio-item {
-  opacity: 0;
-}
-
 .img-centered {
   margin: 0 auto;
 }
@@ -1173,11 +1197,6 @@ figure {
  * Styles of the features section
  *
  */
-#features h2,
-#features .features-list {
-  opacity: 0;
-}
-
 .features-list > ul {
   margin: 0px 0px 10px 0px;
   padding: 0;
@@ -1214,13 +1233,6 @@ figure {
  * Styles of the Offers section
  *
  */
-#offers h2,
-#offers h3,
-#offers .panel-wrapper,
-#offers .further-information {
-  opacity: 0;
-}
-
 .primary .panel p, .primary .panel h4, .primary .panel li {
   color: #403F4C;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1325,11 +1337,6 @@ figure {
  * Styles of the Contact section
  *
  */
-#contact h2,
-#contact .form-wrapper {
-  opacity: 0;
-}
-
 .form-wrapper {
   background: white;
   padding: 15px;
@@ -1628,4 +1635,11 @@ footer .footer-below-content > p:not(:first-child) {
     left: 0px;
     margin-right: 0px;
   }
+}
+#piwik {
+  border: 1px solid #403F4C;
+  padding: 10px;
+}
+#piwik p:last-of-type {
+  margin-bottom: 0;
 }

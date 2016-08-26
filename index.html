@@ -56,6 +56,22 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//thilmany.lu/stats/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//thilmany.lu/stats/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+
   </head>
 
   <body id="page-top" class="index">
@@ -96,6 +112,16 @@
         </div>
       </nav>
     </header>
+
+    <!-- No Script -->
+    <noscript id="noscript-msg" >
+      <div class="container">
+        <div class="col-lg-12">
+          <p><strong>Warning</strong></p>
+          <p>For full functionality of this site it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.</p>
+        </div>
+      </div>
+    </noscript>
 
     <!-- Landing Section -->
     <section id="landing" class="landing">
@@ -390,6 +416,7 @@
         <div class="col-lg-12 text-center">
           <h2>Contact Me</h2>
           <hr class="contact-primary">
+          <noscript>You cannot send a message without having Javascript enabled. If you don't want to enable JavaScript, please send your request to this email: <span class="contactEmail"></span></noscript>
         </div>
       </div>
   	  <div class="row form-wrapper margin-top">
@@ -632,7 +659,7 @@
 
                 <h4>Contact</h4>
                 <p>E-Mail: <span class="contactEmail"></span></p>
-                <p>Internetaddress: <a href="http://www.sam-thilmany.com" target="_blank">www.thilmany.lu</a></p>
+                <p>Internetaddress: <a href="https://thilmany.lu" target="_blank">www.thilmany.lu</a></p>
 
                 <br/>
 
@@ -699,6 +726,12 @@
                   <p>(2) You can prevent storage of cookies by choosing a "disable cookies" option in your browser settings. But this can limit the functionality of our Internet offers as a result.</p>
 
                   <br/>
+
+                  <h4>Website Analytics</h4>
+                  <p>This website uses Piwik, an open source web analysis tool (http://de.piwik.org) to collect and store data for marketing and optimization purposes. From these data, user profiles can be created under a pseudonym.</p>
+                  <p>Piwik uses cookies. Cookies enable recognition of the Internet browser.</p>
+                  <p>The data collected with Piwik is not used to identify visitors to this website and will not be merged with personal data.</p>
+                  <div id="piwik">Loading...</div>
 
                   <h3>Disclosure</h3>
                   <p>According to the Federal Data Protection Act, you have a right to free-of-charge information about your stored data, and possibly entitlement to correction, blocking or deletion of such data. Inquiries can be directed to the following e-mail address: <span class="dataEmail"></span></p>

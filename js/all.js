@@ -31,3 +31,4 @@
 
 // @koala-append "components/main.js"
 // @koala-append "components/contact.js"
+// @koala-append "components/piwik-opt-out.js"

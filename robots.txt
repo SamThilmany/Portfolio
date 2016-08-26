@@ -3,5 +3,8 @@ Disallow:
 Disallow: /img/
 Disallow: /mail/
 Disallow: /cgi-bin/
+Disallow: /webmail/
+Disallow: /stats/
+Disallow: /dev/
 
 Sitemap: https://laborecke.de/Portfolio/sitemap.xml
