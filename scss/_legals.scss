@@ -1,0 +1,7 @@
+#piwik {
+  border: 1px solid $theme-secondary;
+  padding: 10px;
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}

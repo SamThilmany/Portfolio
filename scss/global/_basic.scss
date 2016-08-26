@@ -117,6 +117,25 @@ hr.big-space{
 
 
 /**
+ * Email
+ *
+ */
+.contactEmail {
+  &:after {
+    content: "contact\40thilmany.lu";
+  }
+}
+
+.dataEmail {
+  &:after {
+    content: "data\40thilmany.lu";
+  }
+}
+
+
+
+
+/**
  * Sections
  *
  */
@@ -280,6 +299,7 @@ fieldset[disabled] {
     right: 10px;
     bottom: 10px;
     position: fixed;
+    z-index: 2000;
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
@@ -331,7 +351,7 @@ fieldset[disabled] {
 	}
 
 	.close-modal {
-	  position: absolute;
+	  position: fixed;
 	  width: 75px;
 	  height: 75px;
 	  background-color: transparent;
@@ -365,16 +385,33 @@ fieldset[disabled] {
 	  opacity: 0;
 	  display: none;
 	}
+}
 
-  .contactEmail {
-    &:after {
-      content: "contact\40thilmany.lu";
-    }
+/**
+ * Noscript
+ *
+ */
+noscript {
+  color: #cc3300;
+  span.contactEmail {
+    color: #cc3300;
   }
-
-  .dataEmail {
-    &:after {
-      content: "data\40thilmany.lu";
+}
+#noscript-msg {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  top: 100px;
+  color: white;
+  padding: 20px 0;
+  background: #cc3300;
+  a {
+    color: white;
+    text-decoration: underline;
+    &:hover {
+      color: white;
+      text-decoration: none;
     }
   }
 }
