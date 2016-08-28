@@ -43,8 +43,8 @@
             transform: translateX(0) scale(0.5);
   }
   30%, 35% {
-    -webkit-transform: translateX(-20) scale(0.5);
-            transform: translateX(-20) scale(0.5);
+    -webkit-transform: translateX(-50px) scale(0.5);
+            transform: translateX(-50px) scale(0.5);
   }
   40%, 70% {
     -webkit-transform: translateX(100vw) scale(0.5);
@@ -80,8 +80,8 @@
             transform: translateX(0) scale(0.5);
   }
   30%, 35% {
-    -webkit-transform: translateX(-20) scale(0.5);
-            transform: translateX(-20) scale(0.5);
+    -webkit-transform: translateX(-50px) scale(0.5);
+            transform: translateX(-50px) scale(0.5);
   }
   40%, 70% {
     -webkit-transform: translateX(100vw) scale(0.5);
@@ -528,6 +528,10 @@ section.primary {
 }
 .margin-top {
   margin-top: 20px;
+}
+
+.no-opacity {
+  opacity: 0;
 }
 
 .flyInLeft {

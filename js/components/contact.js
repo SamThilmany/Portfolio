@@ -129,7 +129,6 @@ $(function() {
         success: function( error ) {
 
           // Error message - Invalid name
-          console.log(error);
           if (error.data_validation_name === true) {
             $('#return').html('<div id="error" class="show">Sorry ' + firstName + ', your name seems to be invalid. Please check this and try again.</div>');
           }
@@ -193,7 +192,7 @@ $(function() {
             $("#contact_send").attr("disabled", false);
 
             // Send the form (Animation)
-            $('.form-wrapper').addClass('is-sent');
+            $('.form-wrapper').removeClass('flyInRight').addClass('is-sent');
             setTimeout(function(){
               $('.form-wrapper').removeClass('is-sent');
             }, 2000);

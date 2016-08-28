@@ -7,7 +7,7 @@
  *
  */
 
-
+require_once 'debug.php';
 
 
 /**
@@ -44,12 +44,12 @@ require 'configure.php';
  *
  */
 $name_user        =   htmlspecialchars($_POST['name']);
-$address_user     =   $_POST['email'];
+$address_user     =   htmlspecialchars($_POST['email']);
 $subject          =   htmlspecialchars($_POST['subject']);
 $message          =   htmlspecialchars($_POST['message']);
-$spam1            =   $_POST['spam1'];
-$spam2            =   $_POST['spam2'];
-$session_spam     =   $_SESSION["spam1"];
+$spam1            =   htmlspecialchars($_POST['spam1']);
+$spam2            =   htmlspecialchars($_POST['spam2']);
+$session_spam     =   htmlspecialchars($_SESSION["spam1"]);
 
 list($first_name, $last_name)    =   explode(' ', $name_user);
 
@@ -162,9 +162,9 @@ if(!$errorFound) {
    *
    */
   $values = array(
-    'first_name' 	=>	$first_name,
-    'last_name'	 	=>	$last_name,
-    'email'				=>	$address_user,
+    'first_name' 	=>	htmlspecialchars_decode($first_name),
+    'last_name'	 	=>	htmlspecialchars_decode($last_name),
+    'email'				=>	htmlspecialchars_decode($address_user),
     'subject' 		=>	stripslashes(htmlspecialchars_decode($subject)),
     'message'			=>	stripslashes(htmlspecialchars_decode($message)),
     'date'				=>	date("d.m.Y", time()),
@@ -194,9 +194,9 @@ if(!$errorFound) {
   $mail_admin = new PHPMailer();
 
   $mail_admin->CharSet    = 'UTF-8';
-  $mail_admin->From       = $address_user;
+  $mail_admin->From       = htmlspecialchars_decode($address_user);
   $mail_admin->FromName   = $name_user;
-  $mail_admin->AddAddress($address_admin, $name_admin);
+  $mail_admin->AddAddress($address_owner, $name_owner);
   $mail_admin->IsHTML(true);
   $mail_admin->Subject    = $subject;
   $mail_admin->Body       = $mailContent_admin;
@@ -229,8 +229,8 @@ if(!$errorFound) {
     $mail_user = new PHPMailer();
 
     $mail_user->CharSet   = 'UTF-8';
-    $mail_user->From      = $address_admin;
-    $mail_user->FromName  = $name_admin;
+    $mail_user->From      = $address_owner;
+    $mail_user->FromName  = $name_owner;
     $mail_user->AddAddress($address_user, $name_user);
     $mail_user->IsHTML(true);
     $mail_user->Subject   = 'Your message "' . $subject . '" has reached me';
