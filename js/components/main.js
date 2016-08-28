@@ -201,33 +201,29 @@
     var leftElements = $('#landing h1, #about h2, #about h3, #portfolio h2, #features h2, #offers h2, #offers h3, #contact h2');
 
     leftElements.each( function(){
-      $(this).css({
-        opacity: 0
-      })
+      $(this).addClass('no-opacity')
     } );
 
     leftElements.appear({
-     force_process: true
+      force_process: true
     });
 
     leftElements.on('appear', function() {
-     $(this).addClass('flyInLeft');
+      $(this).addClass('flyInLeft').removeClass('no-opacity');
     });
 
     var rightElements = $('#landing .skills, #about .content-text, #about .circle, #portfolio .portfolio-item, #features .features-list, #offers .panel-wrapper, #offers .further-information, #contact .form-wrapper');
 
     rightElements.each( function(){
-      $(this).css({
-        opacity: 0
-      })
+      $(this).addClass('no-opacity')
     } );
 
     rightElements.appear({
-     force_process: true
+      force_process: true
     });
 
     rightElements.on('appear', function() {
-     $(this).addClass('flyInRight');
+      $(this).addClass('flyInRight').removeClass('no-opacity');
     });
 
 
