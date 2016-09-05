@@ -65,7 +65,7 @@
 
 
     /**
-     * Set Background-Attachment to true, because this feature is
+     * Set Background-Attachment to scroll, because this feature is
      * disabled on most mobile devices due to its huge repaint cost
      *
      * @param  {variable} touchscreen       Contains the Results of the hasTouchscreen()-Function
@@ -198,7 +198,7 @@
      *
      * @function {appear}               Requires the jQuery Appear function to detect if the element is visible
      */
-    var leftElements = $('#landing h1, #about h2, #about h3, #portfolio h2, #features h2, #offers h2, #offers h3, #contact h2');
+    var leftElements = $('#landing h1, #about h2, #about h3, #portfolio h2, #features h2, #features .features-list h3, #offers h2, #offers h3, #contact h2');
 
     leftElements.each( function(){
       $(this).addClass('no-opacity')
@@ -212,7 +212,7 @@
       $(this).addClass('flyInLeft').removeClass('no-opacity');
     });
 
-    var rightElements = $('#landing .skills, #about .content-text, #about .circle, #portfolio .portfolio-item, #features .features-list, #offers .panel-wrapper, #offers .further-information, #contact .form-wrapper');
+    var rightElements = $('#landing .skills, #about .content-text, #about .circle, #portfolio .portfolio-item, #features .features-list ul li, #features .features-description, #offers .panel-wrapper .col-sm-4, #offers .further-information, #contact .form-wrapper');
 
     rightElements.each( function(){
       $(this).addClass('no-opacity')

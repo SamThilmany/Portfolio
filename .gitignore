@@ -1,5 +1,5 @@
 # ############################
-# Files To Be Ignored By Git
+# Files to be ignored by Git
 # ############################
 
 # Configuration (Check configure(blank).php to see the blank file)
@@ -8,12 +8,12 @@ mail/configure.php
 # PHP Debugger
 mail/debug.php
 
-# Deployment Configuration
+# Configuration file for automatic uploading
 deployment-config.json
 
 # Sitemap
 sitemap.xml
 
-# htaccess
+# Server configuration 
 .htaccess
 .htpasswd
