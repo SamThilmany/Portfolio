@@ -29,18 +29,14 @@
 }
 
 .panel {
-  transition : all 0.2s ease-in-out;
+  transition : all 300ms ease-in-out;
   border-radius: 0;
   border: none;
 }
 
 .panel.hover {
   box-shadow: 0 0 10px $black-transparent;
-  animation-name: offer-buzz;
-  animation-duration: 300ms;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  transform: scale(1.01);
 }
 
 .panel-default {

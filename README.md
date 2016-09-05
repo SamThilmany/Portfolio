@@ -1,7 +1,7 @@
 Sam Thilmany | Portfolio Webpage
 ===================
 
-This is the source code of my personal [portfolio website](https://www.thilmany.lu).
+This is the source code of my personal [portfolio website](https://thilmany.lu).
 I had great fun programming it and I hope that it pleases you.
 
 ----------
@@ -10,7 +10,7 @@ I had great fun programming it and I hope that it pleases you.
 Code
 -------------
 
-This website bases on the `Bootstrap` framework and consists of `HTML`, `CSS` and `jQuery` code. The contact form is validated and send by a tiny `PHP` script. To reduce spam, a unique session cookie is set when the page is generated. If the `PHP` script checks the inputs of the contact form, the session cookie is compared with the one submitted by the form.
+This website bases on the `Bootstrap` framework and mainly consists of `HTML`, `CSS` and `jQuery` code. The contact form is validated and send by a tiny `PHP` script. To reduce spam, a unique session cookie is set when the page is generated. If the `PHP` script checks the inputs of the contact form, the session cookie is compared with the one submitted by the form.
 
 ----------
 
